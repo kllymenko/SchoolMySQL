@@ -6,11 +6,11 @@ import java.sql.SQLException;
 import java.util.Objects;
 import java.util.Properties;
 
-public class MySQLConnectionManager {
+public class ConnectionManager {
     private final String url;
     private final Properties dbProps = new Properties();
 
-    public MySQLConnectionManager(MySQLDAOConfig config) {
+    public ConnectionManager(MySQLDAOConfig config) {
         url = config.getUrl();
         dbProps.setProperty("user", config.getUser());
         dbProps.setProperty("password", config.getPassword());

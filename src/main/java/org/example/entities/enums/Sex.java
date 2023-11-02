@@ -1,2 +1,15 @@
-package org.example.entities;public enum Sex {
+package org.example.entities.enums;
+
+public enum Sex {
+    MALE("male"),
+    FEMALE("female");
+    private String sex;
+
+    Sex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getSex() {
+        return sex;
+    }
 }
